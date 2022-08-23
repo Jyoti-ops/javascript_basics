@@ -41,6 +41,12 @@
 
 // 3Scott34
 
+// var output = (function(x){
+//     delete x
+//     return x
+// })(1)
+
+
 // var output=(function(x){
 // delete  x
 // return x
@@ -54,51 +60,70 @@
 //     console.log(output)
 
 
-//var array=['a','b','c'] //How to delete array
 
-//ternary
 
- //var a=10
-// if(a>10){
-//     console.log("a is bigger number")
-// }else{
-//     console.log("a is smaller number")
+//var array = ['a', 'b', 'c', 'd', 'e', 'f']  //How to delete array
+
+// Method1
+//array = []
+
+// Method2
+// while(array.length){
+//     array.pop()
 // }
 
-// var message= a>10 ? "a is bigger number" : "a is smaller number"
+// Method3 
+//array.splice(0, array.length)
+
+//Method4
+// array.length = 0
+
+//console.log(array)
+
+// ternary 
+
+// var a =11
+// // if(a >10){
+// //     console.log("a is bigger number")
+// // } else {
+// //     console.log("a is smaller number")
+// // }
+
+// var message = a > 10 ? "a is bigger number" :  "a is smaller number"
 // console.log(message)
 
-// console.log(1==1)//true
-// console.log(1=="1") //true coz not check with type only check with value
-// console.log(1!="1")//false
-// console.log(1==="1") //false
-// console.log(1!=="1")//true
+// == vs ===
+// console.log(1==1)
+// console.log(1=="1")
+// console.log(1!="1")
 
-// console.log(isEven(3)) //false
-// console.log(isEven(6)) //true
-// console.log(isEven(7)) //false
+// console.log(1===1)
+// console.log(1==='1')
+// console.log(1!=='1')
 
-// function isEven(a)
-// {
+
+// console.log(checkIfEven(3)) // false
+// console.log(checkIfEven(6)) // true
+// console.log(checkIfEven(7)) // false
+
+// function checkIfEven(a){
 //     // if(a%2==0){
 //     //     return true
-//     // }
+//     // } 
 //     // return false
 
-//     //return a%2==0?true:false
-//     return a%2
+//     // return a%2==0 ? true : false
+//     return a%2==0 
 // }
 
-// function one()
-// {
+// function one(){
 //     return {
-//         value :1
+//         value : 1
 //     }
 // }
 
-// function two()
-// {
-//     return   //coz here after return nothing we are declaraing object
+// function two(){
+//     return 
 //     {
 //         value: 2
 //     }
@@ -107,3 +132,9 @@
 // console.log(one())
 // console.log(two())
 
+
+function myFunction() {
+    "use strict";
+  console.log(this); // will alert "undefined"
+}
+myFunction();
